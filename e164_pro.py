@@ -9,13 +9,13 @@ nummer = nummer.replace(" ", "")
 if nummer.startswith("06"):
 	nummer ="+31" + nummer[1:]
 
-if nummer.startswith("0031:"):
+if nummer.startswith("0031"):
 	nummer = "+" + nummer[2:]
 
 # E.164 controle
 patroon = r"^\+[1-9][0-9]{1,14}$"
 
-prin()
+print()
 print("genormaliseerd nummer:", nummer)
 
 if re.match(patroon, nummer):
@@ -23,16 +23,16 @@ if re.match(patroon, nummer):
 	print("[OK] Geldig E.164 nummer")
 
 	if nummer.startswith("+31"):
-	print("nl Nederland")
+		print("nl Nederland")
 
 	elif nummer.startswith("+49"):
-	print("de Duitsland")
+		print("de Duitsland")
 
 	elif nummer.startswith("+32"):
-	print("be Belgie")
+		print("be Belgie")
 
 	elif nummer.startswith("+33"):
-	print("fr Frankrijk")
+		print("fr Frankrijk")
 
 	else:
 		print("[WARN] Onbekende landcode")
