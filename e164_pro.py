@@ -29,19 +29,19 @@ if re.match(patroon, nummer):
         else:
             print("[FIXED] Nederland vast nummer")
 
-if nummer.startswith("+49"):
-    print("de Duitsland")
+   elif nummer.startswith("+49"):
+       print("de Duitsland")
 
-elif nummer.startswith("+32"):
-    print("be Belgie")
+   elif nummer.startswith("+32"):
+       print("be Belgie")
 
-elif nummer.startswith("+33"):
-    print("fr Frankrijk")
+   elif nummer.startswith("+33"):
+       print("fr Frankrijk")
 
-else:
-    print("[WARN] Onbekende landcode")
-else:
-    print("[ERROR] Ongeldige  E.164 nummer")
+   else:
+       print("[WARN] Onbekende landcode")
+  else:
+      print("[ERROR] Ongeldige  E.164 nummer")
 
 
 
