@@ -24,8 +24,8 @@ if re.match(patroon, nummer):
     if nummer.startswith("+31"):
         print("nl Nederlands nummer")
 
-if nummer.startswith("+316"):
-    print("[MOBILE] Nederlands mobiel nummer")
+    if nummer.startswith("+316"):
+        print("[MOBILE] Nederlands mobiel nummer")
 else:
     print("[FIXED] Nederland vast nummer")
 
@@ -40,7 +40,6 @@ elif nummer.startswith("+33"):
 
 else:
     print("[WARN] Onbekende landcode")
-
 else:
     print("[ERROR] Ongeldige  E.164 nummer")
 
