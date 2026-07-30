@@ -29,7 +29,7 @@ if nummer.startswith("+316"):
 else:
     print("[FIXED] Nederland vast nummer")
 
-elif nummer.startswith("+49"):
+if nummer.startswith("+49"):
     print("de Duitsland")
 
 elif nummer.startswith("+32"):
