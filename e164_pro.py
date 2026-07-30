@@ -40,8 +40,9 @@ if re.match(patroon, nummer):
 
     else:
        print("[WARN] Onbekende landcode")
-    else:
-      print("[ERROR] Ongeldige  E.164 nummer")
+
+else:
+     print("[ERROR] Ongeldige  E.164 nummer")
 
 
 
