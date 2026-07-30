@@ -7,10 +7,10 @@ nummer = nummer.replace(" ", "")
 
 # Nederlandse omzettingen
 if nummer.startswith("06"):
-	nummer ="+31" + nummer[1:]
+    nummer ="+31" + nummer[1:]
 
 if nummer.startswith("0031"):
-	nummer = "+" + nummer[2:]
+    nummer = "+" + nummer[2:]
 
 # E.164 controle
 patroon = r"^\+[1-9][0-9]{1,14}$"
