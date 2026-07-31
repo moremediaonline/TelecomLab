@@ -1,5 +1,7 @@
 import re
 
+def normaliseer_nummr(nummer):
+
 nummer = input ("Voer een telefoonnummer in: ")
 
 nummer = nummer.strip()
@@ -9,9 +11,6 @@ nummer = normaliseer_nummer(nummer)
 
 # Nederlandse omzettingen
 
-def normaliseer_nummer(nummer):
-
-    nummer = normaliseer_nummer(nummer)
 
     if nummer.startswith("06"):
         nummer ="+31" + nummer[1:]
