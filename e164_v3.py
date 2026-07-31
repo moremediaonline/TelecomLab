@@ -4,11 +4,14 @@ nummer = input ("Voer een telefoonnummer in: ")
 
 nummer = nummer.strip()
 nummer = nummer.replace(" ", "")
+
 nummer = normaliseer_nummer(nummer)
 
 # Nederlandse omzettingen
 
 def normaliseer_nummer(nummer):
+
+    nummer = normaliseer_nummer(nummer)
 
     if nummer.startswith("06"):
         nummer ="+31" + nummer[1:]
@@ -16,7 +19,7 @@ def normaliseer_nummer(nummer):
     elif nummer.startswith("0031"):
         nummer = "+" + nummer[2:]
 
-    return number
+    return nummer
 
 # E.164 controle
 patroon = r"^\+[1-9][0-9]{1,14}$"
