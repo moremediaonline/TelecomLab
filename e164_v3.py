@@ -2,6 +2,14 @@ import re
 
 def normaliseer_nummer(nummer):
 
+    if nummer.startswith("06"):
+        nummer ="+31" + nummer[1:]
+
+    elif nummer.startswith("0031"):
+        nummer = nummer[2:]
+
+    return nummer
+
     nummer = input ("Voer een telefoonnummer in: ")
 
     nummer = nummer.strip()
@@ -15,16 +23,16 @@ def normaliseer_nummer(nummer):
     if nummer.startswith("06"):
         nummer ="+31" + nummer[1:]
 
-    elif nummer.startswith("0031"):
+    if nummer.startswith("0031"):
         nummer = "+" + nummer[2:]
 
-    return nummer
+
 
 # E.164 controle
 patroon = r"^\+[1-9][0-9]{1,14}$"
 
 print()
-print("genormaliseerd nummer:", nummer)
+          print("genormaliseerd nummer:", nummer)
 
 if re.match(patroon, nummer):
     print("[OK] Geldig E.164 nummer")
