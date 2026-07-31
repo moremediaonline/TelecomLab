@@ -1,13 +1,13 @@
 import re
 
-def normaliseer_nummr(nummer):
+def normaliseer_nummer(nummer):
 
-nummer = input ("Voer een telefoonnummer in: ")
+    nummer = input ("Voer een telefoonnummer in: ")
 
-nummer = nummer.strip()
-nummer = nummer.replace(" ", "")
+    nummer = nummer.strip()
+    nummer = nummer.replace(" ", "")
 
-nummer = normaliseer_nummer(nummer)
+    nummer = normaliseer_nummer(nummer)
 
 # Nederlandse omzettingen
 
