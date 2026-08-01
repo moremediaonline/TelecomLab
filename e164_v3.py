@@ -24,7 +24,7 @@ nummer = normaliseer_nummer(nummer)
 if nummer.startswith("06"):
         nummer ="+31" + nummer[1:]
 
-    if nummer.startswith("0031"):
+if nummer.startswith("0031"):
         nummer = "+" + nummer[2:]
 
 

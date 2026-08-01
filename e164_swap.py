@@ -9,5 +9,3 @@
 11     return nummer
 12
 13 #einde funtie
-
-
