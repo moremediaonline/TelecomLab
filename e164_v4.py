@@ -41,10 +41,10 @@ for nummer in nummers:
         if nummer.startswith("+31"):
             print("nl Nederlands nummer")
 
-        if nummer.startswith("+316"):
-            print("[MOBILE] Nederlands mobiel nummer")
-        else:
-            print("[FIXED] Nederlands vast nummer")
+            if nummer.startswith("+316"):
+                print("[MOBILE] Nederlands mobiel nummer")
+            else:
+                print("[FIXED] Nederlands vast nummer")
 
     elif nummer.startswith("+49"):
        print("de Duitsland")
