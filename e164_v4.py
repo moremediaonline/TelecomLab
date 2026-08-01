@@ -59,7 +59,7 @@ for nummer in nummers:
        print("[WARN] Onbekende landcode")
 
 else:
-     print("[ERROR] Ongeldig  E.164 nummer")
+    print("[ERROR] Ongeldig  E.164 nummer")
 
 
 

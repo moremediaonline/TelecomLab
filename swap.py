@@ -16,37 +16,30 @@
 
 
 
-genormaliseerd nummer: +31612345678
-Resultaat: +31612345678
-[OK] Geldig E.164 nummer
-nl Nederlands nummer
-[MOBILE] Nederlands mobiel nummer
+    if re.match(patroon, nummer):
+39         print("[OK] Geldig E.164 nummer")
+40
+41         if nummer.startswith("+31"):
+42             print("nl Nederlands nummer")
+43
+44             if nummer.startswith("+316"):
+45                 print("[MOBILE] Nederlands mobiel nummer")
+46             else:
+47                 print("[FIXED] Nederlands vast nummer")
+48
+49     elif nummer.startswith("+49"):
+50        print("de Duitsland")
+51
+52     elif nummer.startswith("+32"):
+53        print("be Belgie")
+54
+55     elif nummer.startswith("+33"):
+56        print("fr Frankrijk")
+57
+58     else:
+59        print("[WARN] Onbekende landcode")
+60
+61  else:
+62      print("[ERROR] Ongeldig  E.164 nummer")
 
-genormaliseerd nummer: +31612345678
-Resultaat: +31612345678
-[OK] Geldig E.164 nummer
-nl Nederlands nummer
-[MOBILE] Nederlands mobiel nummer
 
-genormaliseerd nummer: +31612345678
-Resultaat: +31612345678
-[OK] Geldig E.164 nummer
-nl Nederlands nummer
-[MOBILE] Nederlands mobiel nummer
-
-genormaliseerd nummer: +493012345678
-Resultaat: +493012345678
-[OK] Geldig E.164 nummer
-[ERROR] Ongeldig  E.164 nummer
-
-
-        if nummer.startswith("+31"):
-            print("nl Nederlands nummer")
-
-            if nummer.startswith("+316"):
-                print("[MOBILE] Nederlands mobiel nummer")
-            else:
-                print("[FIXED] Nederlands vast nummer")
-
-    elif nummer.startswith("+49"):
-       print("de Duitsland")
