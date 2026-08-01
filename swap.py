@@ -11,3 +11,31 @@
 13 #einde funtie
 
 
+
+
+
+
+
+genormaliseerd nummer: +31612345678
+Resultaat: +31612345678
+[OK] Geldig E.164 nummer
+nl Nederlands nummer
+[MOBILE] Nederlands mobiel nummer
+
+genormaliseerd nummer: +31612345678
+Resultaat: +31612345678
+[OK] Geldig E.164 nummer
+nl Nederlands nummer
+[MOBILE] Nederlands mobiel nummer
+
+genormaliseerd nummer: +31612345678
+Resultaat: +31612345678
+[OK] Geldig E.164 nummer
+nl Nederlands nummer
+[MOBILE] Nederlands mobiel nummer
+
+genormaliseerd nummer: +493012345678
+Resultaat: +493012345678
+[OK] Geldig E.164 nummer
+[FIXED] Nederlands vast nummer
+[ERROR] Ongeldig  E.164 nummer
