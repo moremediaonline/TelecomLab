@@ -6,21 +6,22 @@ def normaliseer_nummer(nummer):
         nummer ="+31" + nummer[1:]
 
     elif nummer.startswith("0031"):
-        nummer = nummer[2:]
+        nummer = "+" + nummer[2:]
 
     return nummer
 
-    nummer = input ("Voer een telefoonnummer in: ")
+#einde funtie
 
-    nummer = nummer.strip()
-    nummer = nummer.replace(" ", "")
+nummer = input("Voer een telefoonnummer in: ")
 
-    nummer = normaliseer_nummer(nummer)
+nummer = nummer.strip()
+nummer = nummer.replace(" ", "")
+nummer = normaliseer_nummer(nummer)
 
 # Nederlandse omzettingen
 
 
-    if nummer.startswith("06"):
+if nummer.startswith("06"):
         nummer ="+31" + nummer[1:]
 
     if nummer.startswith("0031"):
@@ -32,7 +33,7 @@ def normaliseer_nummer(nummer):
 patroon = r"^\+[1-9][0-9]{1,14}$"
 
 print()
-          print("genormaliseerd nummer:", nummer)
+print("genormaliseerd nummer:", nummer)
 
 if re.match(patroon, nummer):
     print("[OK] Geldig E.164 nummer")
