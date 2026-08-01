@@ -46,16 +46,16 @@ patroon = r"^\+[1-9][0-9]{1,14}$"
 print()
 print("genormaliseerd nummer:", nummer)
 
-if re.match(patroon, nummer):
-    print("[OK] Geldig E.164 nummer")
+    if re.match(patroon, nummer):
+        print("[OK] Geldig E.164 nummer")
 
-    if nummer.startswith("+31"):
-        print("nl Nederlands nummer")
+        if nummer.startswith("+31"):
+            print("nl Nederlands nummer")
 
-        if nummer.startswith("+316"):
-            print("[MOBILE] Nederlands mobiel nummer")
-        else:
-            print("[FIXED] Nederlands vast nummer")
+            if nummer.startswith("+316"):
+               print("[MOBILE] Nederlands mobiel nummer")
+            else:
+                print("[FIXED] Nederlands vast nummer")
 
     elif nummer.startswith("+49"):
        print("de Duitsland")
