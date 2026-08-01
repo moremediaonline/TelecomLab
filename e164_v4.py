@@ -19,6 +19,9 @@ nummers = [
     "+493012345678"
 ]
 
+patroon = r"^\+[1-9][0-9]{1,14}$"
+
+
 for nummer in nummers:
     
 
