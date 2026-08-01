@@ -19,12 +19,15 @@ nummers = [
     "+493012345678"
 ]
 
-for nummers in nummers:
-    print(nummer)
+for nummer in nummers:
+    
 
-nummer = nummer.strip()
-nummer = nummer.replace(" ", "")
-nummer = normaliseer_nummer(nummer)
+    nummer = nummer.strip()
+    nummer = nummer.replace(" ", "")
+    nummer = normaliseer_nummer(nummer)
+
+    print()
+    print("genormaliseerd nummer:", nummer)
 
 # Nederlandse omzettingen
 
