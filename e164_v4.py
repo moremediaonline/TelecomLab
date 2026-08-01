@@ -46,14 +46,14 @@ for nummer in nummers:
             else:
                 print("[FIXED] Nederlands vast nummer")
 
-    elif nummer.startswith("+49"):
-       print("de Duitsland")
+        elif nummer.startswith("+49"):
+            print("de Duitsland")
 
-    elif nummer.startswith("+32"):
-       print("be Belgie")
+        elif nummer.startswith("+32"):
+           print("be Belgie")
 
-    elif nummer.startswith("+33"):
-       print("fr Frankrijk")
+        elif nummer.startswith("+33"):
+           print("fr Frankrijk")
 
     else:
        print("[WARN] Onbekende landcode")

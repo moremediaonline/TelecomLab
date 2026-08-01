@@ -16,10 +16,7 @@
 
 
 
-    if re.match(patroon, nummer):
-39         print("[OK] Geldig E.164 nummer")
-40
-41         if nummer.startswith("+31"):
+         if nummer.startswith("+31"):
 42             print("nl Nederlands nummer")
 43
 44             if nummer.startswith("+316"):
@@ -27,19 +24,21 @@
 46             else:
 47                 print("[FIXED] Nederlands vast nummer")
 48
-49     elif nummer.startswith("+49"):
-50        print("de Duitsland")
+49         elif nummer.startswith("+49"):
+50             print("de Duitsland")
 51
-52     elif nummer.startswith("+32"):
-53        print("be Belgie")
+52         elif nummer.startswith("+32"):
+53            print("be Belgie")
 54
-55     elif nummer.startswith("+33"):
-56        print("fr Frankrijk")
+55         elif nummer.startswith("+33"):
+56            print("fr Frankrijk")
 57
 58     else:
 59        print("[WARN] Onbekende landcode")
 60
-61  else:
-62      print("[ERROR] Ongeldig  E.164 nummer")
+61 else:
+62     print("[ERROR] Ongeldig  E.164 nummer")
+63
+
 
 
