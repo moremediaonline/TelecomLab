@@ -1,0 +1,27 @@
+3 def normaliseer_nummer(nummer):
+ 4
+ 5     if nummer.startswith("06"):
+ 6         nummer ="+31" + nummer[1:]
+ 7
+ 8     elif nummer.startswith("0031"):
+ 9         nummer = "+" + nummer[2:]
+10
+11     return nummer
+12
+13 #einde funtie
+
+
+
+
+
+
+
+40
+41         if nummer.startswith("+31"):
+42             print("nl Nederlands nummer")
+43
+44          if nummer.startswith("+316"):
+45               print("[MOBILE] Nederlands mobiel nummer")
+46          else:
+47              print("[FIXED] Nederlands vast nummer")
+48
