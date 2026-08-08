@@ -1,6 +1,6 @@
-nummer,status
+nummer,status,land
 +31612345678, Geldig nummer
 +31612345678, Geldig nummer
 +31612345678, Geldig nummer
 +493012345678, Geldig nummer
-12345, Ongeldig nummer
+12345, Ongeldig,Onbekend
