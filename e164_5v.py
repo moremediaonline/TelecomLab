@@ -37,10 +37,10 @@ with open("nummers.txt", "r" ) as bestand:
             if nummer.startswith("+31"):
                 print("nl Nederlands nummer")
 
-            if nummer.startswith("+316"):
-                 print("[MOBILE] Nederlands mobiel nummer")
-            else:
-                print("[FIXED] Nederlands vast nummer")
+                if nummer.startswith("+316"):
+                    print("[MOBILE] Nederlands mobiel nummer")
+                else:
+                    print("[FIXED] Nederlands vast nummer")
 
             elif nummer.startswith("+49"):
                 print("de Duitsland")
@@ -54,8 +54,8 @@ with open("nummers.txt", "r" ) as bestand:
             else:
                 print("[WARN] Onbekende landcode")
 
-    else:
-        print("[ERROR] Ongeldig  E.164 nummer")
+        else:
+            print("[ERROR] Ongeldig  E.164 nummer")
 
 
 
