@@ -19,7 +19,8 @@ patroon = r"^\+[1-9][0-9]{1,14}$"
 
 with open("nummers.txt", "r" ) as bestand:
     for nummer in bestand:
-    
+        totaal += 1
+
 
         nummer = nummer.strip()
         nummer = nummer.replace(" ", "")
@@ -32,6 +33,7 @@ with open("nummers.txt", "r" ) as bestand:
 # Nederlandse omzettingen
 
         if re.match(patroon, nummer):
+            geldig += 1
             print("[OK] Geldig E.164 nummer")
 
             if nummer.startswith("+31"):
@@ -52,11 +54,17 @@ with open("nummers.txt", "r" ) as bestand:
                 print("fr Frankrijk")
 
             else:
+                ongeldig += 1
                 print("[WARN] Onbekende landcode")
 
         else:
             print("[ERROR] Ongeldig  E.164 nummer")
 
+            print()
+            print("-----Samenvatting--------")
+            print("Totaal gecontroleerd:", totaal)
+            print("geldig:", geldig)
+            print("ongeldig:", ongeldig)
 
 
 
