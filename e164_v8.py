@@ -20,10 +20,14 @@ totaal = 0
 geldig = 0
 ongeldig = 0
 
-uitvoer = open("resultaat.txt", "w")
+uitvoer = open("resultaat.CSV", "w")
+uitvoer = write("nummer,status\n")
+
+nummer_teller - 0
 
 with open("nummers.txt", "r" ) as bestand:
     for nummer in bestand:
+        nummer_teller += 1
         totaal += 1
 
 
@@ -32,6 +36,7 @@ with open("nummers.txt", "r" ) as bestand:
         nummer = normaliseer_nummer(nummer)
 
         print()
+        print(f"nummer {nummer_teller}")
         print("genormaliseerd nummer:", nummer)
 
 
@@ -40,7 +45,7 @@ with open("nummers.txt", "r" ) as bestand:
         if re.match(patroon, nummer):
             geldig += 1
             print("[OK] Geldig E.164 nummer")
-            uitvoer.write(f"{nummer} [OK] Geldig E.164 nummer\n")
+            uitvoer.write(f"{nummer}, Geldig nummer\n")
 
             if nummer.startswith("+31"):
                 print("nl Nederlands nummer")
@@ -66,7 +71,7 @@ with open("nummers.txt", "r" ) as bestand:
         else:
             ongeldig +=1
             print("[ERROR] Ongeldig  E.164 nummer")
-            uitvoer.write(f"{nummer} [ERROR] Ongeldig E.164 nummer\n")
+            uitvoer.write(f"{nummer}, Ongeldig nummer\n")
 
             print()
             print("-----Samenvatting--------")

@@ -1,0 +1,5 @@
++31612345678 [OK] Geldig E.164 nummer
++31612345678 [OK] Geldig E.164 nummer
++31612345678 [OK] Geldig E.164 nummer
++493012345678 [OK] Geldig E.164 nummer
+12345 [ERROR] Ongeldig E.164 nummer
