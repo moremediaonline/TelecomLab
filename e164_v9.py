@@ -69,7 +69,7 @@ with open("nummers.txt", "r" ) as bestand:
 
                 print("[WARN] Onbekende landcode")
 
-                uitvoer.write(f"{nummer}, Geldig,{land}\n")
+            uitvoer.write(f"{nummer}, Geldig,{land}\n")
 
 
         else:
