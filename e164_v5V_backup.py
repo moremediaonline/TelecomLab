@@ -12,21 +12,17 @@ def normaliseer_nummer(nummer):
 
 #einde funtie
 
-with open("nummers.txt", "r" ) as bestand:
-    for regel in bestand:
-        nummer = regel.strip()
-        print("\nControle van:", nummer)
-
-        nummer = normaliseer_nummer(nummer)
-
-        if nummer:
-            valideer_nummer(nummer) 
-
+nummers = [
+    "0612345678",
+    "0031612345678",
+    "+31612345678",
+    "+493012345678"
+]
 
 patroon = r"^\+[1-9][0-9]{1,14}$"
 
 
-
+for nummer in nummers:
     
 
     nummer = nummer.strip()
@@ -65,7 +61,15 @@ patroon = r"^\+[1-9][0-9]{1,14}$"
     else:
         print("[ERROR] Ongeldig  E.164 nummer")
 
+with open("nummers.txt", "r" ) as bestand:
+    for regel in bestand:
+        nummer = regel.strip()
+        print("\nControle van:", nummer)
 
+        nummer = normaliseer_nummer(nummer)
+
+        if nummer:
+            valideer_nummer(nummer) 
 
 
 
