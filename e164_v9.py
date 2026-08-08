@@ -46,7 +46,7 @@ with open("nummers.txt", "r" ) as bestand:
         if re.match(patroon, nummer):
             geldig += 1
             print("[OK] Geldig E.164 nummer")
-            uitvoer.write(f"{nummer}, Geldig nummer\n")
+
 
             if nummer.startswith("+31"):
                 land = "Nederland"
@@ -74,13 +74,15 @@ with open("nummers.txt", "r" ) as bestand:
             print("[ERROR] Ongeldig  E.164 nummer")
             uitvoer.write(f"{nummer}, Ongeldig,Onbekend\n")
 
+        uitvoer.write(f"{nummer}, Geldig,{land}\n")
+
+
             print()
             print("-----Samenvatting--------")
             print("Totaal gecontroleerd:", totaal)
             print("geldig:", geldig)
             print("ongeldig:", ongeldig)
 uitvoer.close()
-
 
 
 
