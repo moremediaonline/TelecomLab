@@ -31,7 +31,7 @@ for nummer in nummers:
 
     print()
     print("genormaliseerd nummer:", nummer)
-    print ("Resultaat:", nummer)
+
 
 # Nederlandse omzettingen
 
