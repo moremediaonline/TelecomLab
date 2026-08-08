@@ -16,6 +16,9 @@ def normaliseer_nummer(nummer):
 
 patroon = r"^\+[1-9][0-9]{1,14}$"
 
+totaal = 0
+geldig = 0
+ongeldig = 0
 
 with open("nummers.txt", "r" ) as bestand:
     for nummer in bestand:
